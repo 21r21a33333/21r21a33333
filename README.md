@@ -36,7 +36,7 @@ I'm Diwakar — a **Blockchain & Backend Engineer** writing production **Rust** 
 I work across the cross-chain stack — **relayers, indexers, watchers / executors, and secure signing infrastructure**.
 
 - 🦀 Rust-first, with Go, C++, TypeScript & Solidity in the toolbox
-- ⛓️ Bitcoin Script, HTLCs, multisig cosigners, EVM & many chains (Solana, Dogecoin, Zcash, Starknet…)
+- ⛓️ Bitcoin Script, HTLCs, multisig cosigners, EVM & many chains (Solana, Dogecoin, Zcash…)
 - 🔐 Secure signing & custody — hardware-backed key management
 - ☁️ AWS, Docker, CI/CD
 - 📍 Hyderabad, India
@@ -89,9 +89,7 @@ A multi-chain merchant checkout: customers pay in **BTC, SOL, or USDC on any maj
 
 <p>
   <a href="https://dorahacks.io/buidl/43518"><b>Project</b></a> ·
-  <a href="https://github.com/TARS-Finance/uniPay"><b>Code</b></a> ·
-  <a href="https://www.youtube.com/watch?v=DHzId2D8UTQ"><b>Demo video</b></a> ·
-  <a href="https://scan.testnet.initia.xyz/utars-chain-1"><b>Rollup explorer</b></a>
+  <a href="https://github.com/TARS-Finance/uniPay"><b>Code</b></a>
 </p>
 
 ---
