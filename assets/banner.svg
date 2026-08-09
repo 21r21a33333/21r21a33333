@@ -16,7 +16,7 @@
   </line>
 
   <text x="74" y="242" font-size="25" fill="#8B949E">Rust · Bitcoin · EVM · distributed systems</text>
-  <text x="74" y="274" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" letter-spacing="1" fill="#6E7681">Crypto SDE 1 · Garden Finance · signing &amp; cross-chain infra</text>
+  <text x="74" y="274" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" letter-spacing="1" fill="#6E7681">Crypto SDE 1 · Garden Finance</text>
 
   <g stroke="#FF6B35">
     <line x1="1085" y1="135" x2="1000" y2="110" stroke-opacity="0.28"/>
