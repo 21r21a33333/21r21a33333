@@ -23,7 +23,7 @@
 
 <p align="center">
   <a href="https://github.com/21r21a33333">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=800&color=FF6B35&center=true&vCenter=true&width=820&height=48&lines=Blockchain+%26+Backend+Engineer;Rust-first+%C2%B7+Bitcoin+%C2%B7+EVM+%C2%B7+multi-chain;Relayers%2C+indexers+%26+secure+signing+infra;AWS+Nitro+Enclaves+%C2%B7+KMS+%C2%B7+mainnet-grade" alt="Typing intro" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=800&color=FF6B35&center=true&vCenter=true&width=820&height=48&lines=Blockchain+%26+Backend+Engineer;Rust-first+%C2%B7+Bitcoin+%C2%B7+EVM+%C2%B7+multi-chain;Relayers%2C+indexers+%26+secure+signing+infra;AWS+%C2%B7+mainnet-grade%2C+security-critical+systems" alt="Typing intro" />
   </a>
 </p>
 
@@ -33,12 +33,12 @@
 
 I'm Diwakar — a **Blockchain & Backend Engineer** writing production **Rust** for Bitcoin, EVM, and multi-chain systems where correctness and security aren't optional.
 
-I work across the cross-chain stack — **relayers, indexers, watchers / executors, and secure signing infrastructure**. Recently I've been deep in **secure signing built on AWS Nitro Enclaves + KMS**, event-driven **Bitcoin & EVM indexers**, and transaction **fee / lifecycle engines**.
+I work across the cross-chain stack — **relayers, indexers, watchers / executors, and secure signing infrastructure**.
 
 - 🦀 Rust-first, with Go, C++, TypeScript & Solidity in the toolbox
 - ⛓️ Bitcoin Script, HTLCs, multisig cosigners, EVM & many chains (Solana, Dogecoin, Zcash, Starknet…)
-- 🔐 Secure signing infrastructure — AWS Nitro Enclaves, KMS, HSM-backed keys
-- ☁️ AWS (EC2, Nitro, KMS), Docker, CI/CD
+- 🔐 Secure signing & custody — hardware-backed key management
+- ☁️ AWS, Docker, CI/CD
 - 📍 Hyderabad, India
 
 ---
@@ -47,7 +47,7 @@ I work across the cross-chain stack — **relayers, indexers, watchers / executo
 
 **Crypto SDE 1 @ [Garden Finance](https://garden.finance) — a Bitcoin R&D studio.**
 
-I build production Rust across Garden's cross-chain stack — **relayers, indexers, and secure signing infrastructure** powering **trust-minimized settlement** over Bitcoin, EVM, and many other chains. Lately: **enclave-based signing on AWS Nitro + KMS**, high-throughput indexers, and transaction fee / lifecycle engines — all mainnet-grade and security-critical.
+I build production Rust across Garden's cross-chain stack — **relayers, indexers, and secure signing infrastructure** powering **trust-minimized settlement** over Bitcoin, EVM, and many other chains. Lately: hardware-backed secure signing, high-throughput indexers, and **transaction fee & lifecycle infrastructure** — all mainnet-grade and security-critical.
 
 > Specifics are under NDA — the open-source work below is the same caliber.
 
