@@ -1,5 +1,5 @@
 <svg width="100%" viewBox="0 0 1280 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
-  <title>Diwakar Matsa — Blockchain &amp; Systems Engineer</title>
+  <title>Diwakar Matsa — Blockchain &amp; Backend Engineer</title>
   <desc>Dark banner. Name Diwakar Matsa in white with a rust-orange accent underline, subtitle Rust, Bitcoin, EVM, distributed systems, and a small animated routing-graph motif.</desc>
 
   <rect x="0" y="0" width="1280" height="300" rx="16" fill="#0D1117"/>
@@ -7,7 +7,7 @@
 
   <text x="1206" y="52" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" letter-spacing="2" fill="#6E7681">@21r21a33333</text>
 
-  <text x="74" y="98" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="19" letter-spacing="6" fill="#6E7681">BLOCKCHAIN &amp; SYSTEMS ENGINEER</text>
+  <text x="74" y="98" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="19" letter-spacing="6" fill="#6E7681">BLOCKCHAIN &amp; BACKEND ENGINEER</text>
 
   <text x="72" y="172" font-size="60" font-weight="700" letter-spacing="2" fill="#E6EDF3">DIWAKAR MATSA</text>
 
@@ -16,7 +16,7 @@
   </line>
 
   <text x="74" y="242" font-size="25" fill="#8B949E">Rust · Bitcoin · EVM · distributed systems</text>
-  <text x="74" y="274" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" letter-spacing="1" fill="#6E7681">Crypto SDE 1 · Garden Finance — trust-minimized settlement</text>
+  <text x="74" y="274" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" letter-spacing="1" fill="#6E7681">Crypto SDE 1 · Garden Finance · signing &amp; cross-chain infra</text>
 
   <g stroke="#FF6B35">
     <line x1="1085" y1="135" x2="1000" y2="110" stroke-opacity="0.28"/>
