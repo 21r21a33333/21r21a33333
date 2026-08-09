@@ -1,0 +1,75 @@
+<svg width="100%" viewBox="0 0 1280 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title>Diwakar Matsa — primary languages and focus areas</title>
+  <desc>Dark card. Left: a bar chart of primary languages led by Rust. Right: focus-area pills including Bitcoin protocol, EVM, cross-chain settlement, distributed systems and applied cryptography.</desc>
+
+  <rect x="0" y="0" width="1280" height="340" rx="16" fill="#0D1117"/>
+  <rect x="0.5" y="0.5" width="1279" height="339" rx="16" fill="none" stroke="#21262D" stroke-width="1"/>
+
+  <rect x="48" y="48" width="4" height="22" rx="2" fill="#FF6B35"/>
+  <text x="64" y="66" font-size="21" font-weight="600" fill="#E6EDF3">Primary languages</text>
+
+  <g font-size="14" fill="#C9D1D9">
+    <text x="64" y="110">Rust</text>
+    <text x="64" y="146">TypeScript</text>
+    <text x="64" y="182">C++</text>
+    <text x="64" y="218">Python</text>
+    <text x="64" y="254">Go</text>
+    <text x="64" y="290">Solidity</text>
+  </g>
+  <g>
+    <rect x="196" y="101" width="388" height="10" rx="5" fill="#161B22"/>
+    <rect x="196" y="137" width="388" height="10" rx="5" fill="#161B22"/>
+    <rect x="196" y="173" width="388" height="10" rx="5" fill="#161B22"/>
+    <rect x="196" y="209" width="388" height="10" rx="5" fill="#161B22"/>
+    <rect x="196" y="245" width="388" height="10" rx="5" fill="#161B22"/>
+    <rect x="196" y="281" width="388" height="10" rx="5" fill="#161B22"/>
+  </g>
+  <g fill="#FF6B35">
+    <rect x="196" y="101" width="388" height="10" rx="5" fill-opacity="0.95"/>
+    <rect x="196" y="137" width="168" height="10" rx="5" fill-opacity="0.82"/>
+    <rect x="196" y="173" width="140" height="10" rx="5" fill-opacity="0.76"/>
+    <rect x="196" y="209" width="116" height="10" rx="5" fill-opacity="0.70"/>
+    <rect x="196" y="245" width="92" height="10" rx="5" fill-opacity="0.64"/>
+    <rect x="196" y="281" width="84" height="10" rx="5" fill-opacity="0.60"/>
+  </g>
+  <text x="196" y="316" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#6E7681">relative emphasis across public work</text>
+
+  <line x1="624" y1="44" x2="624" y2="300" stroke="#21262D" stroke-width="1"/>
+
+  <rect x="648" y="48" width="4" height="22" rx="2" fill="#FF6B35"/>
+  <text x="664" y="66" font-size="21" font-weight="600" fill="#E6EDF3">Focus areas</text>
+
+  <g font-size="14" fill="#C9D1D9">
+    <g>
+      <rect x="664" y="92" width="252" height="34" rx="8" fill="#161B22" stroke="#FF6B35" stroke-opacity="0.35"/>
+      <circle cx="682" cy="109" r="3" fill="#FF6B35"/>
+      <text x="696" y="114">Bitcoin protocol</text>
+    </g>
+    <g>
+      <rect x="946" y="92" width="252" height="34" rx="8" fill="#161B22" stroke="#FF6B35" stroke-opacity="0.35"/>
+      <circle cx="964" cy="109" r="3" fill="#FF6B35"/>
+      <text x="978" y="114">EVM &amp; smart contracts</text>
+    </g>
+    <g>
+      <rect x="664" y="140" width="252" height="34" rx="8" fill="#161B22" stroke="#FF6B35" stroke-opacity="0.35"/>
+      <circle cx="682" cy="157" r="3" fill="#FF6B35"/>
+      <text x="696" y="162">Cross-chain settlement</text>
+    </g>
+    <g>
+      <rect x="946" y="140" width="252" height="34" rx="8" fill="#161B22" stroke="#FF6B35" stroke-opacity="0.35"/>
+      <circle cx="964" cy="157" r="3" fill="#FF6B35"/>
+      <text x="978" y="162">Distributed systems</text>
+    </g>
+    <g>
+      <rect x="664" y="188" width="252" height="34" rx="8" fill="#161B22" stroke="#FF6B35" stroke-opacity="0.35"/>
+      <circle cx="682" cy="205" r="3" fill="#FF6B35"/>
+      <text x="696" y="210">Applied cryptography</text>
+    </g>
+    <g>
+      <rect x="946" y="188" width="252" height="34" rx="8" fill="#161B22" stroke="#FF6B35" stroke-opacity="0.35"/>
+      <circle cx="964" cy="205" r="3" fill="#FF6B35"/>
+      <text x="978" y="210">Secure signing &amp; custody</text>
+    </g>
+  </g>
+  <text x="664" y="256" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="13" fill="#6E7681">Rust-first · correctness-critical · mainnet-grade</text>
+</svg>
