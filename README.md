@@ -46,7 +46,7 @@ I work across the cross-chain stack — **relayers, indexers, watchers / executo
 
 **Crypto SDE 1 @ [Garden Finance](https://garden.finance) — a Bitcoin R&D studio.**
 
-I build production Rust across Garden's cross-chain stack — **relayers, indexers, and secure signing infrastructure** powering **trust-minimized settlement** over Bitcoin, EVM, and many other chains. Lately: hardware-backed secure signing, high-throughput indexers, and **transaction fee & lifecycle infrastructure** — all mainnet-grade and security-critical.
+I build production Rust across Garden's cross-chain stack — **relayers, indexers, and secure signing infrastructure** powering **trust-minimized settlement** over Bitcoin, EVM, and many other chains.
 
 > Specifics are under NDA — the open-source work below is the same caliber.
 
