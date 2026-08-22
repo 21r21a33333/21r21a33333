@@ -55,17 +55,24 @@ I build production Rust across Garden's cross-chain stack — **relayers, indexe
 Open-source · [github.com/21r21a33333/walletkit](https://github.com/21r21a33333/walletkit). One ergonomic Rust facade over [alloy](https://alloy.rs) that lets any dapp or backend send EVM transactions *safely*: keys that **never leave** a swappable signer backend, guardrails that **cannot be bypassed**, and a transaction lifecycle that survives stuck txs and reorgs. A client-side facade — **not** a custody service — where MPC/TEE signers, relayers, bundlers, paymasters and policy engines plug in behind narrow, object-safe traits (every layer is RPC-hoistable).
 
 **Core guarantees**
-- 🔑 **Signature-only key backends** — no plaintext export; env / EIP-2335 keystore / BIP-44 HD → KMS / HSM / Ledger / TEE / MPC as pure config swaps
-- 🛡️ **Un-bypassable policy** — declarative deny-over-allow rules; *what policy approved is provably what gets signed* via a single-use, context-bound approval — and policy gates **every** signature (tx, EIP-712, EIP-191, EIP-7702 auth), not just transactions
-- 🔁 **Reliable lifecycle** — local authoritative nonce manager, EIP-1559 gas estimation + bump ladder, a stable transaction handle across hash-changing bumps, and a reorg-aware confirmation FSM
+- 🔑 **Signature-only keys** — no plaintext export; env / keystore / HD → KMS / HSM / Ledger / TEE / MPC as config swaps
+- 🛡️ **Un-bypassable policy** — deny-over-allow rules gating *every* signature (tx, EIP-712, EIP-191, 7702); approved is provably what's signed
+- 🔁 **Reliable lifecycle** — authoritative nonce manager, EIP-1559 gas bumps, a stable tx handle across bumps, reorg-aware confirmation
 - 🧩 **Pluggable everything** — signer · policy · submission · nonce · gas · state, each behind a swappable trait
 
-**Standards & protocols** *(implemented + design-locked roadmap)*
-`EIP-1559` · `EIP-712` · `EIP-191` · `EIP-2` low-s · `EIP-2335` keystores · `BIP-44` HD · `EIP-1271` / `ERC-6492` contract sigs · `Permit2` / `EIP-2612` / `EIP-3009` · `ERC-2771` meta-tx · Flashbots / MEV-Share · `ERC-4337` (UserOp v0.6/0.7/0.8) · `ERC-7677` paymasters · `EIP-7702` delegation · `ERC-7579` modules · `EIP-5792` `wallet_sendCalls` · `ERC-5564`/`6538` stealth addresses · `ERC-7683` cross-chain intents · `RIP-7212` secp256r1 passkeys
+**Standards & protocols** *(implemented + roadmap)*
+
+| Area | Standards |
+| --- | --- |
+| Signing | `EIP-712` · `EIP-191` · `EIP-2` low-s · `EIP-1271` / `ERC-6492` |
+| Keys & gas | `EIP-2335` keystores · `BIP-44` HD · `EIP-1559` |
+| Approvals | `Permit2` · `EIP-2612` · `EIP-3009` |
+| Meta-tx & MEV | `ERC-2771` · Flashbots / MEV-Share |
+| Account abstraction | `ERC-4337` (UserOp v0.6/0.7/0.8) · `ERC-7677` paymasters · `EIP-7702` · `ERC-7579` modules · `EIP-5792` |
+| Privacy & intents | `ERC-5564` / `6538` stealth · `ERC-7683` cross-chain |
+| Auth | `RIP-7212` secp256r1 passkeys |
 
 **Integrates (never re-implements):** alloy signers · AWS KMS · Ledger / Trezor · Turnkey / Fireblocks / Web3Auth (MPC/TEE) · Safe{Core} multisig · Rundler / Silius / Alto bundlers · Pimlico / Alchemy / Gelato paymasters · Regorus (Rego/OPA) & WASM policy plugins · revm / Tenderly simulation · redb / SQLite state · eRPC.
-
-*Design locked after 2 research rounds + a multi-lens completeness review; **Phase 1 (EVM execution core) in active development.***
 
 ---
 
