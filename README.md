@@ -123,9 +123,6 @@ A multi-chain merchant checkout: customers pay in **BTC, SOL, or USDC on any maj
 <p align="center">
   <img src="./assets/focus.svg" alt="Primary languages and focus areas" width="100%" />
 </p>
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=21r21a33333&hide_border=true&background=0D1117&stroke=21262D&ring=FF6B35&fire=FF6B35&currStreakNum=E6EDF3&currStreakLabel=FF6B35&sideNums=C9D1D9&sideLabels=8B949E&dates=6E7681" alt="Contribution streak" />
-</p>
 
 ---
 
