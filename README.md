@@ -50,6 +50,23 @@ I build production Rust across Garden's cross-chain stack — **relayers, indexe
 
 > Specifics are under NDA — the open-source work below is the same caliber.
 
+### 🔐 walletkit — safe EVM transaction infrastructure in Rust
+
+Open-source · [github.com/21r21a33333/walletkit](https://github.com/21r21a33333/walletkit). One ergonomic Rust facade over [alloy](https://alloy.rs) that lets any dapp or backend send EVM transactions *safely*: keys that **never leave** a swappable signer backend, guardrails that **cannot be bypassed**, and a transaction lifecycle that survives stuck txs and reorgs. A client-side facade — **not** a custody service — where MPC/TEE signers, relayers, bundlers, paymasters and policy engines plug in behind narrow, object-safe traits (every layer is RPC-hoistable).
+
+**Core guarantees**
+- 🔑 **Signature-only key backends** — no plaintext export; env / EIP-2335 keystore / BIP-44 HD → KMS / HSM / Ledger / TEE / MPC as pure config swaps
+- 🛡️ **Un-bypassable policy** — declarative deny-over-allow rules; *what policy approved is provably what gets signed* via a single-use, context-bound approval — and policy gates **every** signature (tx, EIP-712, EIP-191, EIP-7702 auth), not just transactions
+- 🔁 **Reliable lifecycle** — local authoritative nonce manager, EIP-1559 gas estimation + bump ladder, a stable transaction handle across hash-changing bumps, and a reorg-aware confirmation FSM
+- 🧩 **Pluggable everything** — signer · policy · submission · nonce · gas · state, each behind a swappable trait
+
+**Standards & protocols** *(implemented + design-locked roadmap)*
+`EIP-1559` · `EIP-712` · `EIP-191` · `EIP-2` low-s · `EIP-2335` keystores · `BIP-44` HD · `EIP-1271` / `ERC-6492` contract sigs · `Permit2` / `EIP-2612` / `EIP-3009` · `ERC-2771` meta-tx · Flashbots / MEV-Share · `ERC-4337` (UserOp v0.6/0.7/0.8) · `ERC-7677` paymasters · `EIP-7702` delegation · `ERC-7579` modules · `EIP-5792` `wallet_sendCalls` · `ERC-5564`/`6538` stealth addresses · `ERC-7683` cross-chain intents · `RIP-7212` secp256r1 passkeys
+
+**Integrates (never re-implements):** alloy signers · AWS KMS · Ledger / Trezor · Turnkey / Fireblocks / Web3Auth (MPC/TEE) · Safe{Core} multisig · Rundler / Silius / Alto bundlers · Pimlico / Alchemy / Gelato paymasters · Regorus (Rego/OPA) & WASM policy plugins · revm / Tenderly simulation · redb / SQLite state · eRPC.
+
+*Design locked after 2 research rounds + a multi-lens completeness review; **Phase 1 (EVM execution core) in active development.***
+
 ---
 
 ## Tech
@@ -64,6 +81,7 @@ I build production Rust across Garden's cross-chain stack — **relayers, indexe
 
 | Project | What it is | Stack |
 | --- | --- | --- |
+| [**walletkit**](https://github.com/21r21a33333/walletkit) | Rust wallet-infrastructure library — one safe facade over alloy for EVM tx sending: swappable signer backends (keys never leave), un-bypassable policy, reorg-safe lifecycle; 4337 / 7702 / paymasters plug in | Rust · alloy |
 | [**amm-rs**](https://github.com/21r21a33333/amm-rs) | Open, wei-exact AMM quoting library — Uniswap, Curve, Aerodrome, and your own pools | Rust |
 | [**arb-router**](https://github.com/21r21a33333/arb-router) | On-chain arbitrage-detection router — venue-agnostic engine over a pool graph | Rust |
 | [**blockchain**](https://github.com/21r21a33333/blockchain) | Uniform clients for interacting with many different blockchains | Go |
