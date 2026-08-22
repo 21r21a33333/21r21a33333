@@ -118,14 +118,6 @@ A multi-chain merchant checkout: customers pay in **BTC, SOL, or USDC on any maj
 
 ---
 
-## Focus & activity
-
-<p align="center">
-  <img src="./assets/focus.svg" alt="Primary languages and focus areas" width="100%" />
-</p>
-
----
-
 ## Connect
 
 <p align="center">
