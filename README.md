@@ -118,7 +118,7 @@ Open-source · [github.com/21r21a33333/walletkit](https://github.com/21r21a33333
 
 ### 🏆 Mercury — your wealth, onchain · Colosseum Crypto World's Fair
 
-A **self-custodial brokerage for tokenized US equities on Solana**, built with Unit Labs and live in beta. Hold stablecoins, invest in stocks, ETFs and one-token diversified baskets, and spend with the card — a modern financial account without giving up custody. Execution routes through Jupiter and Kamino with a wrapper chosen per asset, cost basis tracked throughout; iOS app, web app and API ship from one monorepo.
+A **self-custodial brokerage for tokenized US equities on Solana**, built with Unit Labs and live in beta. Hold stablecoins, invest in stocks, ETFs and one-token diversified baskets, and spend with the card.
 
 <p><a href="https://beta.trymercury.xyz"><b>Try the beta</b></a></p>
 
@@ -130,7 +130,7 @@ A **zero-inventory, protocol-agnostic intent resolver** on 1inch Aqua. Solvent f
 
 ### 🏆 Stockfront — your AI prime broker for tokenized stocks · BNB Chain
 
-A model writes a strategy in a second; running it takes minutes, several signatures, and a chain that moves in between — so the model is asked only for the part that doesn't expire, **the intent**, and a compiler does the rest. Plain language, canvas blocks or JSON compile to one typed graph of 11 primitives, type-checked and emitted against live chain state, then reviewed and user-signed. Carry, leverage, index baskets, managed portfolios and concentrated liquidity, with health factor and named risk shown before every step. Built with a teammate.
+Users simply specify their financial intent — *"the safest way to earn yield"* — and Stockfront recommends and prepares the optimal strategy, sized to their holdings, unlocking yield, leverage and liquidity from a stock portfolio. Institutional strategies onchain: carry, leverage and index exposure, each with its live rate displayed before execution. Transparent risk — health factor before and after every borrow, liquidation distance, and the named risk per strategy. Every strategy is compiled, validated against live chain state, and user-signed. Built with a teammate.
 
 <p><a href="https://www.youtube.com/watch?v=a685OVbK_sY"><b>Demo video</b></a> · <a href="https://github.com/21r21a33333/stockfront"><b>Code</b></a></p>
 
