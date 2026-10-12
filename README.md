@@ -100,9 +100,9 @@ Open-source · [github.com/21r21a33333/walletkit](https://github.com/21r21a33333
 | **Privacy & ZK** | [**veil402**](https://github.com/21r21a33333/veil402) | Shielded UTXO pool on Solana with per-transaction, per-verifier selective disclosure — Noir · Groth16 · Anchor |
 | | [**openfhe-secure-maxcosine**](https://github.com/21r21a33333/openfhe-secure-maxcosine) | Maximum cosine similarity over *encrypted* vectors — OpenFHE CKKS, multiparty, no decryption |
 | **Intents & execution** | [**solvent**](https://github.com/thesolvent/solvent) | Zero-inventory intent resolver on 1inch Aqua — fills UniswapX off non-custodial maker liquidity borrowed at settlement, holding no capital |
+| | [**stockfront**](https://github.com/21r21a33333/stockfront) | Intent compiler for tokenized-stock strategies — plain language in, a typed 11-primitive graph type-checked and emitted against live chain state, out |
 | | [**amm-rs**](https://github.com/21r21a33333/amm-rs) | Wei-exact AMM quoting library — Uniswap, Curve, Aerodrome, and your own pools |
 | | [**arb-router**](https://github.com/21r21a33333/arb-router) | On-chain arbitrage-detection router — venue-agnostic engine over a pool graph |
-| | [**stockfront**](https://github.com/21r21a33333/stockfront) | Intent compiler for tokenized-stock strategies — plain language in, a typed 11-primitive graph type-checked and emitted against live chain state, out |
 | **Wallet & chain infra** | [**walletkit**](https://github.com/21r21a33333/walletkit) | One safe Rust facade over alloy for EVM tx sending — swappable signers, un-bypassable policy, reorg-safe lifecycle |
 | | [**btc-tee-escrow**](https://github.com/21r21a33333/btc-tee-escrow) | Trustless Bitcoin escrow inside a TEE — enclave-compatible server, Bitcoin Script validation, provably-fair dispute resolution |
 | | [**blockchain**](https://github.com/21r21a33333/blockchain) | Uniform Go clients for interacting with many different chains |
