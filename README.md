@@ -71,13 +71,15 @@ Open-source · [github.com/21r21a33333/walletkit](https://github.com/21r21a33333
 
 ### 🕶️ veil402 — a shielded pool that can still prove one transaction
 
-Open-source · [github.com/21r21a33333/veil402](https://github.com/21r21a33333/veil402). A **zero-knowledge shielded UTXO pool on Solana** — Noir circuit → Groth16 (Sunspot verifier) → Anchor pool program — hiding transaction **amounts and recipients** in the Zcash / RAILGUN / Tornado-Nova lineage.
+[github.com/21r21a33333/veil402](https://github.com/21r21a33333/veil402) · A **zero-knowledge shielded UTXO pool on Solana** — Noir → Groth16 (Sunspot) → Anchor — hiding **amounts and recipients** in the Zcash / RAILGUN / Tornado-Nova lineage.
 
-The differentiator those systems don't offer: the owner of a note can prove **one transaction's contents** — `(value, asset, recipient)` — to **one chosen verifier**, bound to that verifier and non-replayable, **without revealing anything about any other transaction**. Privacy by default, auditability on demand, at single-transaction granularity.
+**Why 402.** Agentic payments settle on public rails, so an agent that pays its way through the world publishes your business as it runs — suppliers, prices, volume, timing.
 
-- 🔏 Noir circuit, Groth16 proofs verified on-chain via CPI
+**The fix:** pay shielded, then prove **one transaction** — `(value, asset, recipient)` — to **one chosen verifier**, bound and non-replayable, revealing nothing about any other. Not an all-or-nothing viewing key, not a global auditor key. Privacy by default, auditability on demand.
+
+- 🔏 Noir circuit, Groth16 verified on-chain via CPI; audited against Tornado Nova & RAILGUN prior art
 - 🌳 Append-only commitment tree, pool-scoped nullifier PDAs, reorg-safe state
-- 🧪 Audited against Tornado Nova and RAILGUN prior art; table-driven circuit tests and a real-validator end-to-end harness
+- 🤖 Agent-payment SDK + demo — *roadmap*
 
 > Research / active development — not audited, not for real funds.
 
