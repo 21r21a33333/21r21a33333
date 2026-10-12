@@ -118,45 +118,24 @@ Open-source · [github.com/21r21a33333/walletkit](https://github.com/21r21a33333
 
 ### 🏆 Mercury — your wealth, onchain · Colosseum Crypto World's Fair
 
-A **self-custodial brokerage for tokenized US equities on Solana**, built with Unit Labs and live in beta. Hold stablecoins, invest in stocks, ETFs and curated baskets, spend with the card — the simplicity of a modern financial account, without giving up custody.
+A **self-custodial brokerage for tokenized US equities on Solana**, built with Unit Labs and live in beta. Hold stablecoins, invest in stocks, ETFs and one-token diversified baskets, and spend with the card — a modern financial account without giving up custody. Execution routes through Jupiter and Kamino with a wrapper chosen per asset, cost basis tracked throughout; iOS app, web app and API ship from one monorepo.
 
-- 💼 Stocks, ETFs and one-token diversified baskets, with cost-basis accounting that holds up
-- ⚡ Solana execution — Jupiter routing, Kamino, wrapper selection per asset
-- 📱 iOS app, web app and API in one monorepo, shipped to a public beta
-
-<p>
-  <a href="https://beta.trymercury.xyz"><b>Try the beta</b></a>
-</p>
+<p><a href="https://beta.trymercury.xyz"><b>Try the beta</b></a></p>
 
 ### 🏆 Solvent — a solver that holds no inventory · ETHOnline 2026
 
-A **zero-inventory, protocol-agnostic intent resolver** on **1inch Aqua**. Solvent fills intent orders — starting with UniswapX — using non-custodial **maker** liquidity borrowed through Aqua *at the instant of settlement*, so it holds no capital of its own and keeps the spread.
+A **zero-inventory, protocol-agnostic intent resolver** on 1inch Aqua. Solvent fills intent orders using non-custodial maker liquidity borrowed through Aqua at the instant of settlement, so one maker balance backs inventory across UniswapX, CoW, Across and more while the capital never leaves the maker's control. Displaced maker strategies either stay routable or fund a price-restoration rebate, an off-chain reservation engine handles over-commitment between winning an auction and settling, and The Compact extends the whole thing cross-chain.
 
-- 💧 One maker balance backs solver inventory across many protocols at once, instead of each protocol needing its own siloed treasury
-- 🔒 The maker's capital never leaves their control — Aqua records a virtual allowance, and real tokens move only at the pull
-- ⚖️ Capped water-fill allocation across makers, with an off-chain reservation engine for the hard part: over-commitment between winning an auction and settling
-- 🦀 Rust pipeline — ingest → price → reserve → fill → reconcile to the amount actually pulled
-
-<p>
-  <a href="https://ethglobal.com/showcase/the-solvent-84emi"><b>Showcase</b></a> ·
-  <a href="https://github.com/thesolvent/solvent"><b>Code</b></a>
-</p>
+<p><a href="https://ethglobal.com/showcase/the-solvent-84emi"><b>Showcase</b></a> · <a href="https://github.com/thesolvent/solvent"><b>Code</b></a></p>
 
 ### 🏆 Stockfront — your AI prime broker for tokenized stocks · BNB Chain
 
-A model writes a strategy in a second; running it takes minutes, several signatures, and a chain that moves in between. So the model is asked only for the part that doesn't expire — **the intent** — and a compiler does the rest.
+A model writes a strategy in a second; running it takes minutes, several signatures, and a chain that moves in between — so the model is asked only for the part that doesn't expire, **the intent**, and a compiler does the rest. Plain language, canvas blocks or JSON compile to one typed graph of 11 primitives, type-checked and emitted against live chain state, then reviewed and user-signed. Carry, leverage, index baskets, managed portfolios and concentrated liquidity, with health factor and named risk shown before every step. Built with a teammate.
 
-- 🧩 Plain language, canvas blocks or JSON compile to **one typed graph** of 11 primitives — sources and actions, no protocol named anywhere in the grammar
-- ✅ A type checker with 4 value types and 28 located diagnostics rejects a position fed to a step expecting tokens, an output spent twice, or a cycle
-- ⛓️ Addresses, amounts and edges come from live chain state at emit time — not from the model — then every step is reviewed and user-signed
-- 📉 Health factor before and after each borrow, named risk per strategy, and loops refused at the health floor rather than liquidated
-- 🦀 Rust backend (hexagonal core → adapters → app), React frontend · built with a teammate
+<p><a href="https://www.youtube.com/watch?v=a685OVbK_sY"><b>Demo video</b></a> · <a href="https://github.com/21r21a33333/stockfront"><b>Code</b></a></p>
 
-<p>
-  <a href="https://www.youtube.com/watch?v=a685OVbK_sY"><b>Demo video</b></a> ·
-  <a href="https://github.com/21r21a33333/stockfront"><b>Code</b></a>
-</p>
+### 🏆 uniPay — pay from any chain, settle and earn on Initia · DoraHacks "Initiate"
 
-**Also built**
+A multi-chain merchant checkout: customers pay in BTC, SOL or USDC on any major EVM, and merchants receive USDC on Initia in ~30 seconds through trustless HTLC atomic swaps — no bridges, no custodians. Idle merchant float auto-stakes into Initia DEX LP positions earning swap fees and staking rewards at once. HTLCs on four ecosystems with a per-chain watcher and executor each, a custom Initia EVM rollup, and an orderbook / solver / staking backend behind a React + InterwovenKit frontend. DeFi track, built with a teammate.
 
-- **[uniPay](https://github.com/TARS-Finance/uniPay)** · *Initia "Initiate" (DoraHacks)* — pay from any chain, settle and earn on Initia: customers pay in BTC, SOL or USDC on any major EVM, merchants receive USDC on Initia in ~30 seconds through trustless HTLC atomic swaps, with idle float auto-staking into Initia DEX LP. Demoed live across 4 ecosystems. DeFi track, built with a teammate. · [Project](https://dorahacks.io/buidl/43518)
+<p><a href="https://dorahacks.io/buidl/43518"><b>Project</b></a> · <a href="https://github.com/TARS-Finance/uniPay"><b>Code</b></a></p>
