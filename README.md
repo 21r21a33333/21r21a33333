@@ -102,11 +102,11 @@ Open-source · [github.com/21r21a33333/walletkit](https://github.com/21r21a33333
 | **Intents & execution** | [**solvent**](https://github.com/thesolvent/solvent) | Zero-inventory intent resolver on 1inch Aqua — fills UniswapX off non-custodial maker liquidity borrowed at settlement, holding no capital |
 | | [**amm-rs**](https://github.com/21r21a33333/amm-rs) | Wei-exact AMM quoting library — Uniswap, Curve, Aerodrome, and your own pools |
 | | [**arb-router**](https://github.com/21r21a33333/arb-router) | On-chain arbitrage-detection router — venue-agnostic engine over a pool graph |
+| | [**stockfront**](https://github.com/21r21a33333/stockfront) | Intent compiler for tokenized-stock strategies — plain language in, a typed 11-primitive graph type-checked and emitted against live chain state, out |
 | **Wallet & chain infra** | [**walletkit**](https://github.com/21r21a33333/walletkit) | One safe Rust facade over alloy for EVM tx sending — swappable signers, un-bypassable policy, reorg-safe lifecycle |
 | | [**btc-tee-escrow**](https://github.com/21r21a33333/btc-tee-escrow) | Trustless Bitcoin escrow inside a TEE — enclave-compatible server, Bitcoin Script validation, provably-fair dispute resolution |
 | | [**blockchain**](https://github.com/21r21a33333/blockchain) | Uniform Go clients for interacting with many different chains |
-| **Products & tooling** | [**stockfront**](https://github.com/21r21a33333/stockfront) | Non-custodial income layer for tokenized stocks on BNB Chain — intent in, compiled and chain-validated strategy out |
-| | [**ts-plugins-**](https://github.com/21r21a33333/ts-plugins-) | Contract-first, high-performance plugin infrastructure |
+| **Products & tooling** | [**ts-plugins-**](https://github.com/21r21a33333/ts-plugins-) | Contract-first, high-performance plugin infrastructure |
 | | [**yt-notes**](https://github.com/21r21a33333/yt-notes) | Local pipeline turning any YouTube video into a structured note with frames, diagrams & timestamp links |
 | | [**distributed-systems**](https://github.com/21r21a33333/distributed-systems) | Implementation techniques for engineering distributed systems |
 
@@ -128,14 +128,29 @@ A **self-custodial brokerage for tokenized US equities on Solana**, built with U
   <a href="https://beta.trymercury.xyz"><b>Try the beta</b></a>
 </p>
 
-### 🏆 Stockfront — your AI prime broker for tokenized stocks · BNB Chain
+### 🏆 Solvent — a solver that holds no inventory · ETHOnline 2026
 
-State a financial intent — *"the safest way to earn yield on my stocks"* — and Stockfront recommends, compiles and prepares the optimal strategy against live chain state, sized to your holdings and signed by you. Non-custodial throughout; it composes existing protocols and deploys no contracts of its own.
+A **zero-inventory, protocol-agnostic intent resolver** on **1inch Aqua**. Solvent fills intent orders — starting with UniswapX — using non-custodial **maker** liquidity borrowed through Aqua *at the instant of settlement*, so it holds no capital of its own and keeps the spread.
 
-- 🧠 Intent in, executable strategy out — carry, leverage and index exposure, each with its live rate shown before you commit
-- 📉 Transparent risk — health factor before and after every borrow, liquidation distance, named risk per strategy
-- 🔗 Venus, PancakeSwap V3, Reserve baskets and Glider folios, reached through Binance Web3
-- 🦀 Rust backend (hexagonal core → adapters → app) with a React frontend · built with a teammate
+- 💧 One maker balance backs solver inventory across many protocols at once, instead of each protocol needing its own siloed treasury
+- 🔒 The maker's capital never leaves their control — Aqua records a virtual allowance, and real tokens move only at the pull
+- ⚖️ Capped water-fill allocation across makers, with an off-chain reservation engine for the hard part: over-commitment between winning an auction and settling
+- 🦀 Rust pipeline — ingest → price → reserve → fill → reconcile to the amount actually pulled
+
+<p>
+  <a href="https://ethglobal.com/showcase/the-solvent-84emi"><b>Showcase</b></a> ·
+  <a href="https://github.com/thesolvent/solvent"><b>Code</b></a>
+</p>
+
+### 🏆 Stockfront — an intent compiler for tokenized stocks · BNB Chain
+
+A model writes a strategy in a second; running it takes minutes, several signatures, and a chain that moves in between. So the model is asked only for the part that doesn't expire — **the intent** — and a compiler does the rest.
+
+- 🧩 Plain language, canvas blocks or JSON compile to **one typed graph** of 11 primitives — sources and actions, no protocol named anywhere in the grammar
+- ✅ A type checker with 4 value types and 28 located diagnostics rejects a position fed to a step expecting tokens, an output spent twice, or a cycle
+- ⛓️ Addresses, amounts and edges come from live chain state at emit time — not from the model — then every step is reviewed and user-signed
+- 📉 Health factor before and after each borrow, named risk per strategy, and loops refused at the health floor rather than liquidated
+- 🦀 Rust backend (hexagonal core → adapters → app), React frontend · built with a teammate
 
 <p>
   <a href="https://www.youtube.com/watch?v=a685OVbK_sY"><b>Demo video</b></a> ·
@@ -144,23 +159,4 @@ State a financial intent — *"the safest way to earn yield on my stocks"* — a
 
 **Also built**
 
-- **[Solvent](https://github.com/thesolvent/solvent)** · *ETHOnline 2026* — a zero-inventory, protocol-agnostic intent resolver on 1inch Aqua: one non-custodial maker balance backs solver inventory across many protocols at once, so the operator holds no capital and still keeps the spread.
 - **[uniPay](https://github.com/TARS-Finance/uniPay)** · *Initia "Initiate" (DoraHacks)* — pay from any chain, settle and earn on Initia: customers pay in BTC, SOL or USDC on any major EVM, merchants receive USDC on Initia in ~30 seconds through trustless HTLC atomic swaps, with idle float auto-staking into Initia DEX LP. Demoed live across 4 ecosystems. DeFi track, built with a teammate. · [Project](https://dorahacks.io/buidl/43518)
-
----
-
-## Connect
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/diwakar-matsa-2a9733281">
-    <img src="https://img.shields.io/badge/LinkedIn-Let's%20talk-FF6B35?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117" alt="LinkedIn" />
-  </a>
-  <a href="mailto:void.00.diwakar@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Reach%20out-FF6B35?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" alt="Email" />
-  </a>
-  <a href="https://x.com/diwakr_matsa">
-    <img src="https://img.shields.io/badge/X-Follow-FF6B35?style=for-the-badge&logo=x&logoColor=white&labelColor=0D1117" alt="X" />
-  </a>
-</p>
-
-<p align="center"><sub><i>Correctness is a feature. Ship it like it's mainnet.</i></sub></p>
