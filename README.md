@@ -25,7 +25,7 @@
 
 I'm Diwakar — a **Blockchain & Backend Engineer** writing production **Rust** for Bitcoin, EVM, Solana and multi-chain systems where correctness and security aren't optional.
 
-I work across the cross-chain stack — **relayers, indexers, watchers / executors, and secure signing infrastructure**.
+I work across the **cross-chain stack**, **applied cryptography**, **zero-knowledge** and **distributed systems**.
 
 - 🦀 Rust-first, with Go, C++, TypeScript & Solidity in the toolbox
 - ⛓️ HTLCs, Bitcoin Script & multisig cosigners — across Bitcoin, EVM, Solana, Dogecoin, Litecoin & Zcash
