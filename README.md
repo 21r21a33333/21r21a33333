@@ -130,7 +130,7 @@ A **zero-inventory, protocol-agnostic intent resolver** on 1inch Aqua. Solvent f
 
 ### 🏆 Stockfront — your AI prime broker for tokenized stocks · BNB Chain
 
-Users simply specify their financial intent — *"the safest way to earn yield"* — and Stockfront recommends and prepares the optimal strategy, sized to their holdings, unlocking yield, leverage and liquidity from a stock portfolio. Institutional strategies onchain: carry, leverage and index exposure, each with its live rate displayed before execution. Transparent risk — health factor before and after every borrow, liquidation distance, and the named risk per strategy. Every strategy is compiled, validated against live chain state, and user-signed. Built with a teammate.
+Users simply specify their financial intent — *"the safest way to earn yield"* — and Stockfront recommends and prepares the optimal strategy, sized to their holdings, unlocking yield, leverage and liquidity from a stock portfolio. Institutional strategies onchain: carry, leverage and index exposure, each with its live rate displayed before execution. Transparent risk — health factor before and after every borrow, liquidation distance, and the named risk per strategy. Every strategy is compiled, validated against live chain state, and user-signed.
 
 <p><a href="https://www.youtube.com/watch?v=a685OVbK_sY"><b>Demo video</b></a> · <a href="https://github.com/21r21a33333/stockfront"><b>Code</b></a></p>
 
