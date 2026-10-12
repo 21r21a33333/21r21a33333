@@ -97,18 +97,18 @@ Open-source · [github.com/21r21a33333/walletkit](https://github.com/21r21a33333
 
 | Area | Project | What it is |
 | --- | --- | --- |
-| **Privacy & ZK** | [**veil402**](https://github.com/21r21a33333/veil402) | Shielded UTXO pool on Solana with per-transaction, per-verifier selective disclosure — Noir · Groth16 · Anchor |
+| **Privacy & ZK** | [**veil402**](https://github.com/21r21a33333/veil402) | Shielded UTXO pool on Solana for the agentic-payments era — hides amounts and recipients, then proves **one** transaction to **one** chosen verifier · Noir · Groth16 · Anchor |
 | | [**openfhe-secure-maxcosine**](https://github.com/21r21a33333/openfhe-secure-maxcosine) | Maximum cosine similarity over *encrypted* vectors — OpenFHE CKKS, multiparty, no decryption |
-| **Intents & execution** | [**solvent**](https://github.com/thesolvent/solvent) | Zero-inventory intent resolver on 1inch Aqua — fills UniswapX off non-custodial maker liquidity borrowed at settlement, holding no capital |
-| | [**stockfront**](https://github.com/21r21a33333/stockfront) | Your AI prime broker for tokenized stocks — plain language in, a typed 11-primitive graph type-checked and emitted against live chain state, out |
-| | [**amm-rs**](https://github.com/21r21a33333/amm-rs) | Wei-exact AMM quoting library — Uniswap, Curve, Aerodrome, and your own pools |
-| | [**arb-router**](https://github.com/21r21a33333/arb-router) | On-chain arbitrage-detection router — venue-agnostic engine over a pool graph |
-| **Wallet & chain infra** | [**walletkit**](https://github.com/21r21a33333/walletkit) | One safe Rust facade over alloy for EVM tx sending — swappable signers, un-bypassable policy, reorg-safe lifecycle |
+| **Intents & execution** | [**solvent**](https://github.com/thesolvent/solvent) | Zero-inventory, protocol-agnostic intent resolver on 1inch Aqua — one non-custodial maker balance backs fills across UniswapX, CoW, Across…; displaced maker strategies stay routable or fund a price-restoration rebate, and The Compact extends it cross-chain |
+| | [**stockfront**](https://github.com/21r21a33333/stockfront) | Your AI prime broker for tokenized stocks — carry, leverage, index baskets, managed portfolios and concentrated liquidity, composed by an intent compiler: plain language → a typed 11-primitive graph → steps emitted against live chain state |
+| | [**amm-rs**](https://github.com/21r21a33333/amm-rs) | Wei-exact AMM quoting *and* swap-calldata construction behind one object-safe `Pool` trait — Uniswap V2/V3/V4, Curve, Aerodrome; every path fork-proven to settle to the exact wei |
+| | [**arb-router**](https://github.com/21r21a33333/arb-router) | Arbitrage detection over a live pool graph — per-chain block-consistent state, bounded path search quoted from local math, then USD-priced, ranked and served over an API |
+| **Wallet & chain infra** | [**walletkit**](https://github.com/21r21a33333/walletkit) | One Rust facade over alloy for sending EVM transactions safely — signature-only keys behind swappable backends, policy gating every signature, a lifecycle surviving stuck txs and reorgs; MPC/TEE signers, bundlers and paymasters plug in |
 | | [**btc-tee-escrow**](https://github.com/21r21a33333/btc-tee-escrow) | Trustless Bitcoin escrow inside a TEE — enclave-compatible server, Bitcoin Script validation, provably-fair dispute resolution |
 | | [**blockchain**](https://github.com/21r21a33333/blockchain) | Uniform Go clients for interacting with many different chains |
-| **Products & tooling** | [**ts-plugins-**](https://github.com/21r21a33333/ts-plugins-) | Contract-first, high-performance plugin infrastructure |
-| | [**yt-notes**](https://github.com/21r21a33333/yt-notes) | Local pipeline turning any YouTube video into a structured note with frames, diagrams & timestamp links |
-| | [**distributed-systems**](https://github.com/21r21a33333/distributed-systems) | Implementation techniques for engineering distributed systems |
+| **Products & tooling** | [**ts-plugins-**](https://github.com/21r21a33333/ts-plugins-) | Contract-first plugin infrastructure — Rust host, out-of-process TypeScript runtimes over protobuf socket IPC, host-managed KV, and a `pluginctl` CLI |
+| | [**yt-notes**](https://github.com/21r21a33333/yt-notes) | Read YouTube instead of watching it — a local yt-dlp / ffmpeg / whisper pipeline, then Claude Code authors the note with real frames, mermaid diagrams and timestamp deep-links |
+| | [**distributed-systems**](https://github.com/21r21a33333/distributed-systems) | GFS and MapReduce built from the papers, in Rust |
 
 **More** — [choose-rich](https://github.com/21r21a33333/choose-rich) · multi-chain gaming API • [interview-gpt-assistant](https://github.com/21r21a33333/interview-gpt-assistant) · LLM interview assistant • [alerts-notifier](https://github.com/21r21a33333/alerts-notifier) · Rust alert monitor with phone-call escalation
 
