@@ -1,12 +1,8 @@
 <!--
   Diwakar Matsa — GitHub profile README
   Theme: sleek minimal dark · accent #FF6B35 (ember) · bg #0D1117
-  Banner is a hand-built animated SVG (assets/banner.svg), not a template.
+  Header is badges only — no banner, no animated widgets.
 -->
-
-<p align="center">
-  <img src="./assets/banner.svg" alt="Diwakar Matsa — Blockchain & Backend Engineer" width="100%" />
-</p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/diwakar-matsa-2a9733281">
@@ -18,11 +14,8 @@
   <a href="https://github.com/21r21a33333?tab=repositories">
     <img src="https://img.shields.io/badge/Rust-first-FF6B35?style=flat&logo=rust&logoColor=white&labelColor=0D1117" alt="Rust-first" />
   </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/21r21a33333">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=800&color=FF6B35&center=true&vCenter=true&width=820&height=48&lines=Blockchain+%26+Backend+Engineer;Rust-first+%C2%B7+Bitcoin+%C2%B7+EVM+%C2%B7+Solana+%C2%B7+multi-chain;Relayers%2C+indexers+%26+secure+signing+infra;Zero-knowledge+circuits+%C2%B7+shielded+pools;AWS+%C2%B7+mainnet-grade%2C+security-critical+systems" alt="Typing intro" />
+  <a href="https://x.com/diwakr_matsa">
+    <img src="https://img.shields.io/badge/X-@diwakr__matsa-FF6B35?style=flat&logo=x&logoColor=white&labelColor=0D1117" alt="X" />
   </a>
 </p>
 
@@ -168,6 +161,9 @@ State a financial intent — *"the safest way to earn yield on my stocks"* — a
   </a>
   <a href="mailto:void.00.diwakar@gmail.com">
     <img src="https://img.shields.io/badge/Email-Reach%20out-FF6B35?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" alt="Email" />
+  </a>
+  <a href="https://x.com/diwakr_matsa">
+    <img src="https://img.shields.io/badge/X-Follow-FF6B35?style=for-the-badge&logo=x&logoColor=white&labelColor=0D1117" alt="X" />
   </a>
 </p>
 
