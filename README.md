@@ -100,7 +100,7 @@ Open-source · [github.com/21r21a33333/walletkit](https://github.com/21r21a33333
 | **Privacy & ZK** | [**veil402**](https://github.com/21r21a33333/veil402) | Shielded UTXO pool on Solana with per-transaction, per-verifier selective disclosure — Noir · Groth16 · Anchor |
 | | [**openfhe-secure-maxcosine**](https://github.com/21r21a33333/openfhe-secure-maxcosine) | Maximum cosine similarity over *encrypted* vectors — OpenFHE CKKS, multiparty, no decryption |
 | **Intents & execution** | [**solvent**](https://github.com/thesolvent/solvent) | Zero-inventory intent resolver on 1inch Aqua — fills UniswapX off non-custodial maker liquidity borrowed at settlement, holding no capital |
-| | [**stockfront**](https://github.com/21r21a33333/stockfront) | Intent compiler for tokenized-stock strategies — plain language in, a typed 11-primitive graph type-checked and emitted against live chain state, out |
+| | [**stockfront**](https://github.com/21r21a33333/stockfront) | Your AI prime broker for tokenized stocks — plain language in, a typed 11-primitive graph type-checked and emitted against live chain state, out |
 | | [**amm-rs**](https://github.com/21r21a33333/amm-rs) | Wei-exact AMM quoting library — Uniswap, Curve, Aerodrome, and your own pools |
 | | [**arb-router**](https://github.com/21r21a33333/arb-router) | On-chain arbitrage-detection router — venue-agnostic engine over a pool graph |
 | **Wallet & chain infra** | [**walletkit**](https://github.com/21r21a33333/walletkit) | One safe Rust facade over alloy for EVM tx sending — swappable signers, un-bypassable policy, reorg-safe lifecycle |
@@ -142,7 +142,7 @@ A **zero-inventory, protocol-agnostic intent resolver** on **1inch Aqua**. Solve
   <a href="https://github.com/thesolvent/solvent"><b>Code</b></a>
 </p>
 
-### 🏆 Stockfront — an intent compiler for tokenized stocks · BNB Chain
+### 🏆 Stockfront — your AI prime broker for tokenized stocks · BNB Chain
 
 A model writes a strategy in a second; running it takes minutes, several signatures, and a chain that moves in between. So the model is asked only for the part that doesn't expire — **the intent** — and a compiler does the rest.
 
