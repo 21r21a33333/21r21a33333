@@ -27,12 +27,6 @@ I'm Diwakar — a **Blockchain & Backend Engineer** writing production **Rust** 
 
 I work across the **cross-chain stack**, **applied cryptography**, **zero-knowledge** and **distributed systems**.
 
-- 🦀 Rust-first, with Go, C++, TypeScript & Solidity in the toolbox
-- ⛓️ HTLCs, Bitcoin Script & multisig cosigners — across Bitcoin, EVM, Solana, Dogecoin, Litecoin & Zcash
-- 🔒 Zero-knowledge — Noir circuits, Groth16 verification, shielded UTXO pools
-- ☁️ AWS, Docker, CI/CD
-- 📍 Hyderabad, India
-
 ---
 
 ## What I'm building now
