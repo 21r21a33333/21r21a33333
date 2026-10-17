@@ -35,7 +35,7 @@ I work across the **cross-chain stack**, **applied cryptography**, **zero-knowle
 
 I build production Rust across Garden's cross-chain stack — **relayers, indexers, and secure signing infrastructure** powering **trust-minimized settlement** over Bitcoin, EVM, and many other chains.
 
-> Specifics are under NDA — the open-source work below is the same caliber.
+Lately: **Munger**, a cross-chain HTLC executor built to solve liquidity fragmentation — aggregating CEX, DEX and AMM routers for on-chain routing, with perps-based delta-neutral hedging, risk-aware inventory rebalancing, a policy-gated routing engine and enclave-based multichain signing over a double-entry ledger.
 
 **[Mercury](https://beta.trymercury.xyz) @ Unit Labs — your wealth, onchain.**
 
